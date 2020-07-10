@@ -1,0 +1,133 @@
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(4, 40px);
+    grid-template-areas: 
+        "header"
+        "item"
+        "grid";
+    justify-items: center;
+}
+
+
+/* html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+  }
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: linear-gradient(to right, #CCFFFF, #FFCCCC);
+}
+*/
+
+header {
+    /* display:flex;
+    flex-wrap: wrap; */
+    grid-row-start: 1;
+    justify-content: center;
+    grid-area: header;
+    font-size: 42px;
+}
+
+
+.button {
+	background-color: blue;
+	border: 2px solid white;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: white;
+	margin-top: 10px;
+	display: inline-block;
+}
+
+.bg-modal {
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal-contents {
+	height: 300px;
+	width: 500px;
+	background-color: white;
+	text-align: center;
+	padding: 20px;
+	position: relative;
+	border-radius: 4px;
+}
+
+input {
+	margin: 15px auto;
+	display: block;
+	width: 50%;
+	padding: 8px;
+	border: 1px solid gray;
+}
+
+.close {
+	position: absolute;
+	top: 0;
+	right: 10px;
+	font-size: 42px;
+	color: #333;
+	transform: rotate(45deg);
+    cursor: pointer;
+} 
+
+.item {
+    grid-row-start: 2;
+    text-align: center;
+    font-size: 2rem;
+    justify-content: center;
+    grid-area: item;
+    /* padding-left: 50%;
+    padding: 0px 0px 0px 16px !important;
+    border: none;
+    vertical-align: middle;
+    height: 48px;
+    line-height: 48px; */
+}
+
+
+.grid-container {
+    /* border: 1px solid #ccc;
+    border-radius: 5px;  */
+    /* position: absolute; */
+    /* top: 60%;
+    left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    width: 600px;
+    top: 60%;
+    justify-content: center;
+    transform: translate(0%, 150%);
+}
+
+ .grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+} 
+
+.square {
+    height: 200px;
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 9rem;
+    color: #333;
+    background-image: linear-gradient(to bottom,transparent,transparent 50%,rgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+    text-align: center;
+}
+
